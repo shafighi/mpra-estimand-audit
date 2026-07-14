@@ -1,0 +1,87 @@
+{
+  "deng2024": {
+    "key": "deng2024lentimpra",
+    "cite": "Deng C, Whalen S, Steyert M, et al. Massively parallel characterization of regulatory elements in the developing human cortex. Science 384, eadh0559 (2024).",
+    "doi": "10.1126/science.adh0559"
+  },
+  "avsec2021": {
+    "key": "avsec2021enformer",
+    "cite": "Avsec \u017d, Agarwal V, Visentin D, et al. Effective gene expression prediction from sequence by integrating long-range interactions. Nature Methods 18, 1196\u20131203 (2021).",
+    "doi": "10.1038/s41592-021-01252-x"
+  },
+  "linder2023": {
+    "key": "linder2023borzoi",
+    "cite": "Linder J, Srivastava D, Yuan H, Agarwal V, Kelley DR. Predicting RNA-seq coverage from DNA sequence as a unifying model of gene regulation. Nature Methods (2025); bioRxiv 2023.08.30.555582.",
+    "doi": "10.1101/2023.08.30.555582"
+  },
+  "chen2022sei": {
+    "key": "chen2022sei",
+    "cite": "Chen KM, Wong AK, Troyanskaya OG, et al. A sequence-based global map of regulatory activity for deciphering human genetics. Nature Genetics 54, 940\u2013949 (2022).",
+    "doi": "10.1038/s41588-022-01102-2"
+  },
+  "zhou2022orca": {
+    "key": "zhou2022orca",
+    "cite": "Zhou J. Sequence-based modeling of three-dimensional genome architecture from kilobase to chromosome scale. Nature Genetics 54, 725\u2013734 (2022).",
+    "doi": "10.1038/s41588-022-01065-4"
+  },
+  "sasse2023": {
+    "key": "sasse2023benchmark",
+    "cite": "Sasse A, Ng B, Spiro AE, et al. Benchmarking of deep neural networks for predicting personal gene expression from DNA sequence highlights shortcomings. Nature Genetics 55, 2060\u20132064 (2023).",
+    "doi": "10.1038/s41588-023-01524-6"
+  },
+  "huang2023": {
+    "key": "huang2023geuvadis",
+    "cite": "Huang C, Shuai RW, Baokar P, et al. Personal transcriptome variation is poorly explained by current genomic deep learning models. Nature Genetics 55, 2056\u20132059 (2023).",
+    "doi": "10.1038/s41588-023-01574-w"
+  },
+  "murphy2024": {
+    "key": "murphy2024celltype",
+    "cite": "Murphy D, Beardall W, Rei M, et al. Predicting cell type-specific epigenomic profiles accounting for distal genetic effects. Nature Communications 15, 10510 (2024).",
+    "doi": "10.1038/s41467-024-54441-5"
+  },
+  "tewhey2016": {
+    "key": "tewhey2016saturation",
+    "cite": "Tewhey R, Kotliar D, Park DS, et al. Direct identification of hundreds of expression-modulating variants using a multiplexed reporter assay. Cell 165, 1519\u20131529 (2016).",
+    "doi": "10.1016/j.cell.2016.04.027"
+  },
+  "coetzee2015": {
+    "key": "coetzee2015motifbreakr",
+    "cite": "Coetzee SG, Coetzee GA, Hazelett DJ. motifbreakR: an R/Bioconductor package for predicting variant effects at transcription factor binding sites. Bioinformatics 31, 3847\u20133849 (2015).",
+    "doi": "10.1093/bioinformatics/btv470"
+  },
+  "pollard2010": {
+    "key": "pollard2010phylop",
+    "cite": "Pollard KS, Hubisz MJ, Rosenbloom KR, Siepel A. Detection of nonneutral substitution rates on mammalian phylogenies. Genome Research 20, 110\u2013121 (2010).",
+    "doi": "10.1101/gr.097857.109"
+  },
+  "gtex2020": {
+    "key": "gtex2020",
+    "cite": "GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science 369, 1318\u20131330 (2020).",
+    "doi": "10.1126/science.aaz1776"
+  },
+  "phan2019": {
+    "key": "phan2019numpyro",
+    "cite": "Phan D, Pradhan N, Jankowiak M. Composable effects for flexible and accelerated probabilistic programming in NumPyro. arXiv 1912.11554 (2019).",
+    "doi": "10.48550/arXiv.1912.11554"
+  },
+  "carvalho2010": {
+    "key": "carvalho2010horseshoe",
+    "cite": "Carvalho CM, Polson NG, Scott JG. The horseshoe estimator for sparse signals. Biometrika 97, 465\u2013480 (2010).",
+    "doi": "10.1093/biomet/asq017"
+  },
+  "devbrain2024": {
+    "key": "devbrain2024xqtl",
+    "cite": "Cross-ancestry atlas of gene, isoform, and splicing regulation in the developing human brain. Science 384, eadh0829 (2024). Data: github.com/gandallab/devBrain_xQTL.",
+    "doi": "10.1126/science.adh0829"
+  },
+  "wang2020susie": {
+    "key": "wang2020susie",
+    "cite": "Wang G, Sarkar A, Carbonetto P, Stephens M. A simple new approach to variable selection in regression, with application to genetic fine mapping. J. R. Stat. Soc. B 82, 1273\u20131300 (2020).",
+    "doi": "10.1111/rssb.12388"
+  },
+  "kelley2018": {
+    "key": "kelley2018basenji",
+    "cite": "Kelley DR, Reshef YA, Bileschi M, et al. Sequential regulatory activity prediction across chromosomes with convolutional neural networks. Genome Research 28, 739\u2013750 (2018).",
+    "doi": "10.1101/gr.227819.117"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "atlas": "Walker_2019 neocortex (QTD000579), mid-gestation developing cortex, n=211 donors",
+  "source": "eQTL Catalogue via mcp-human-genetics, marginal (best-p) associations only \u2014 NO fine-mapping/SuSiE available through this connector",
+  "n_queried": 3976,
+  "n_with_association": 3229,
+  "n_with_beta": 3229,
+  "n_significant_p05": 1419,
+  "magnitude_spearman": {
+    "AlphaGenome": -0.026,
+    "Borzoi": -0.026,
+    "lentiMPRA": -0.057,
+    "note": "all n.s. or weakly negative on all-tested; sig-subset AG=+0.001 n.s."
+  },
+  "direction_concordance": {
+    "all": {
+      "AG": 0.507,
+      "lentiMPRA": 0.524
+    },
+    "p<0.001": {
+      "AG": 0.512,
+      "lentiMPRA": 0.53
+    },
+    "note": "flat at chance across thresholds"
+  },
+  "interpretation": "MARGINAL associations show NO model tracking in this second cohort \u2014 consistent with the paper's documented finding that marginal/lead-SNP QTLs fail as benchmarks (cf. GTEx lead-SNP z-score rho=0.001). It REPLICATES that null in an independent developing-cortex atlas but is NOT a second confirmation of the fine-mapped tracking result (Gandal rho=0.238), because fine-mapped causal effects are not retrievable here.",
+  "contribution": "Robustness for the 'fine-mapping is required' sub-claim; NOT a headline second referee."
+}

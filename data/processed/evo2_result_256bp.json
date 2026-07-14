@@ -1,0 +1,47 @@
+{
+  "status": "re-scored_256bp_summed_LL_TRUSTWORTHY",
+  "n_scored": 3976,
+  "window_bp": 256,
+  "metric": "summed per-token log-likelihood delta (alt-ref)",
+  "magnitude_spread": {
+    "median_abs": 1.013,
+    "max_abs": 54.532,
+    "p95_abs": 3.938,
+    "note": "real spread now \u2014 dilution artifact resolved"
+  },
+  "correlations": {
+    "vs_AlphaGenome": {
+      "rho": 0.005,
+      "p": 0.759
+    },
+    "vs_Borzoi": {
+      "rho": 0.004,
+      "p": 0.787
+    },
+    "vs_Enformer": {
+      "rho": -0.07,
+      "p": 8.99e-06
+    },
+    "vs_reporter": {
+      "rho": 0.002,
+      "p": 0.916
+    },
+    "vs_eQTL_posterior_all": {
+      "rho": 0.034,
+      "p": 0.508,
+      "n": 370
+    },
+    "vs_eQTL_PIP01": {
+      "rho": 0.107,
+      "p": 0.366,
+      "n": 73
+    },
+    "vs_eQTL_PIP05": {
+      "rho": 0.364,
+      "p": 0.074,
+      "n": 25
+    }
+  },
+  "interpretation": "With proper tight-window scoring (dilution resolved), Evo2 STILL does not cluster with the activity-predictor CNNs (AlphaGenome/Borzoi/Enformer, \u03c1\u22480) and does not track the reporter. It measures a DIFFERENT estimand: sequence likelihood/plausibility under a genome LM, not predicted regulatory activity. The one significant correlation (vs Enformer) is tiny and negative. A directional hint toward the endogenous eQTL effect appears only at truly causal variants (PIP\u22650.5: \u03c1=0.36, p=0.07, n=25) but is underpowered.",
+  "thesis_impact": "SHARPENS rather than bulletproofs: the estimand-mismatch framing extends \u2014 not all 'sequence models' share an estimand. The three activity-predictor CNNs cluster; a likelihood LM is a fourth, distinct estimand. Report as a nuance/limitation, NOT as a 4th member of the model cluster."
+}

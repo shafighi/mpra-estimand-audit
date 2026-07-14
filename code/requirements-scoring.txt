@@ -1,0 +1,10 @@
+# Sequence-model scoring (run on GPU / cluster). Pinned versions that worked on the CRI cluster.
+# AlphaGenome: via its API (ALPHAGENOME API key required)
+# Borzoi / Enformer:
+torch==2.2.2  # +cu121 build matching the node CUDA driver
+transformers==4.38.2
+numpy==1.26.4
+enformer-pytorch
+pysam
+pyfaidx
+# Evo 2 scored in a separate env (torch 2.4.1+cu121 + flash-attn); see code/scoring notes

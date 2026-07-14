@@ -1,0 +1,31 @@
+{
+  "model_reporter_by_phylop": {
+    "low": 0.026,
+    "mid": -0.011,
+    "high": -0.058
+  },
+  "model_reporter_by_activity": {
+    "low": 0.039,
+    "mid": -0.007,
+    "high": -0.068
+  },
+  "model_reporter_by_motif": {
+    "low": 0.055,
+    "mid": -0.069,
+    "high": -0.055
+  },
+  "model_eqtl_partial": {
+    "raw_ag": 0.238,
+    "ag_ctrl_phylop": 0.231,
+    "ag_ctrl_phylop_activity": 0.231,
+    "ag_ctrl_all": 0.232,
+    "raw_bz": 0.276,
+    "bz_ctrl": 0.269
+  },
+  "model_reporter_by_ascertainment": {
+    "in_eqtl_set": -0.0002,
+    "not_in_eqtl_set": -0.0142
+  },
+  "n_eqtl": 370,
+  "n_total": 3976
+}

@@ -1,0 +1,39 @@
+{
+  "supp_S4_scz_3dgenome": {
+    "type": "3D-genome Hi-C loop table (NOT a CRISPR screen)",
+    "my_variants": 3976,
+    "table_rsids": 25322,
+    "rsid_overlap": 68,
+    "all_LD_proxies": true,
+    "lead_snps": 0,
+    "DAVs_in_overlap": 0,
+    "interpretation": "68 of my variants are LD-proxy risk SNPs co-located in SCZ Hi-C loop anchors; co-membership, not CRISPR editing"
+  },
+  "prime_editing_cellgenomics": {
+    "type": "pooled prime-editing CRISPR screen (HAP1 cells)",
+    "genes_covered": [
+      "SMARCB1 (chr22)",
+      "MLH1 (chr3)"
+    ],
+    "screen_variants": 2067,
+    "exact_coord_allele_overlap": 0,
+    "nearest": "6 of my variants within 50kb of SMARCB1 but all outside the 763bp edited window (closest ~1.8kb)",
+    "interpretation": "zero exact same-variant overlap; screen only covers 2 cancer genes, neither in my psychiatric set"
+  },
+  "har_neurons_nature": {
+    "type": "human accelerated regions, hg38 intervals",
+    "n_intervals": 3257,
+    "variants_inside_HAR": 2,
+    "variants": [
+      "rs12902898 (chr15:77556849, HAR_976)",
+      "rs12902948 (chr15:77556912, HAR_976)"
+    ],
+    "DAVs": 0,
+    "interpretation": "2 variants fall inside one HAR (region-level overlap, not variant-level CRISPR measurement)"
+  },
+  "single_variant_papers": {
+    "rs3752495_WDR90_insomnia": "NOT in my 3,976",
+    "TSNARE1_ADGRB1": "named in text; rsID not provided"
+  },
+  "bottom_line": "No exact same-variant, same-condition CRISPR measurement overlaps the 3,976. The only variant-level rsID overlap (68) is with a 3D-genome loop table, not a CRISPR screen. The two genuine CRISPR/base-editing screens cover unrelated genes (SMARCB1, MLH1) with zero coordinate overlap."
+}

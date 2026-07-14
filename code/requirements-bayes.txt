@@ -1,0 +1,7 @@
+# Bayesian models: latent measurement model, ACP, MPRA de-noising, sensitivity (Python 3.11+)
+numpyro==0.21.0
+jax==0.10.2
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+arviz

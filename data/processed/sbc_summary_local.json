@@ -1,0 +1,28 @@
+{
+  "grid": [
+    -0.3,
+    0.0,
+    0.3
+  ],
+  "n_fits": 32,
+  "reps_per_rho": {
+    "-0.3": 6,
+    "0.0": 20,
+    "0.3": 6
+  },
+  "overall_coverage": 0.906,
+  "coverage_by_rho": {
+    "-0.3": 1.0,
+    "0.0": 0.85,
+    "0.3": 1.0
+  },
+  "bias_by_rho": {
+    "-0.3": -0.0107,
+    "0.0": 0.0067,
+    "0.3": -0.0033
+  },
+  "total_div": 0,
+  "warmup": 250,
+  "draws": 250,
+  "note": "rho=0 (paper operating point) topped up to 20 reps -> 0.85 coverage; earlier 4/6 was small-n noise"
+}

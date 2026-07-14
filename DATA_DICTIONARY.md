@@ -1,0 +1,39 @@
+# Data dictionary
+
+Processed and derived data files. Raw third-party inputs are not redistributed (see README).
+
+
+## data/processed/
+
+- **agreement_matrix.csv** (1 KB) - csv, 18x9. cols: measured, ag_head, mode, n, spearman, pearson, p, sign_concord, auroc
+- **alphagenome_scores.parquet** (623 KB) - parquet, 3976x38. cols: variant_id, rsid, chrom, pos, ref, alt, logFC, adj.P.Val, is_dav, has_da ...
+- **arbiter_input.parquet** (441 KB) - parquet, 3976x17. cols: variant_id, rsid, is_dav, ag, bz, mb, phylop, mpra, se, ag_s ...
+- **benchmark_canonical.parquet** (346 KB) - parquet, 3976x16. cols: rsid, chrom, pos, ref, alt, mpra_logFC, mpra_fdr, is_dav, baseline_activity, model_effect_canonical ...
+- **borzoi_merged.parquet** (801 KB) - parquet, 3976x47. cols: signed_mean, abs_mean, max_abs, signed_mean_allbrain, max_abs_allbrain, variant_id, logFC, is_dav, rsid_x, qtl_motifbreakr_effect_size ...
+- **citations_verified.json** (4 KB) - json. keys: deng2024, avsec2021, linder2023, chen2022sei, zhou2022orca, sasse2023, huang2023, murphy2024, tewhey2016, coetzee2015, pollard2010, gtex2020
+- **crispr_overlap_results.json** (1 KB) - json. keys: supp_S4_scz_3dgenome, prime_editing_cellgenomics, har_neurons_nature, single_variant_papers, bottom_line
+- **cross_estimator_matrix.csv** (0 KB) - csv, 5x6. cols: Unnamed: 0, AlphaGenome, Borzoi, Enformer, Evo 2, lentiMPRA
+- **enformer_merged.parquet** (273 KB) - parquet, 3976x12. cols: rsid, chrom, pos, ref, alt, is_dav, mpra_logFC, model_effect_canonical, borzoi_abs, enformer_brain_abs ...
+- **evo2_merged_256bp.parquet** (269 KB) - parquet, 3976x9. cols: rsid, model_effect_canonical, mpra_logFC, evo2_abs, evo2_delta_sum, ag_abs, mpra_abs, bz_abs, enf_abs
+- **evo2_result_256bp.json** (1 KB) - json. keys: status, n_scored, window_bp, metric, magnitude_spread, correlations, interpretation, thesis_impact
+- **latent_arbiter_pervariant.parquet** (257 KB) - parquet, 3976x14. cols: variant_id, rsid, is_dav, E_mean, E_sd, A_mean, A_sd, p_endo_moves, p_assay_moves, p_endogenous_only ...
+- **latent_arbiter_summary.json** (1 KB) - json. keys: n_variants, n_div, max_rhat, rho_mean, rho_hdi95, rho_p_gt_0, loadings, attribution_counts_all, attribution_counts_dav
+- **mpra_posterior_effects.csv** (4 KB) - csv, 26x14. cols: rsid, variant_chrom, variant_pos, ref, alt, logFC, SE, beta_post_mean, beta_post_sd, beta_hdi_lo ...
+- **pervariant_resource.parquet** (473 KB) - parquet, 3976x26. cols: variant_id, rsid, is_dav_x, E_mean, E_sd, A_mean, A_sd, p_endo_moves, p_assay_moves, p_endogenous_only ...
+- **phylop.parquet** (74 KB) - parquet, 3976x2. cols: variant_id, phylop
+- **revision_canon.json** (3 KB) - json. keys: benchmark1_lentiMPRA, bayesian_denoising, model_model_cluster, latent_arbiter, concordance_map_all, concordance_map_dav, endogenous_in_domain, benchmark2_eqtl, stratified, sbc, enformer
+- **sbc_results_local.parquet** (5 KB) - parquet, 32x7. cols: rho_true, rep, rho_mean, hdi_lo, hdi_hi, covered, ndiv
+- **sbc_summary_local.json** (0 KB) - json. keys: grid, n_fits, reps_per_rho, overall_coverage, coverage_by_rho, bias_by_rho, total_div, warmup, draws, note
+- **scz_3dgenome_rsid_overlap.csv** (0 KB) - csv, 68x1. cols: rsid
+- **sensitivity_results.csv** (0 KB) - csv, 7x7. cols: spec, n, rho_mean, rho_hdi_lo, rho_hdi_hi, rho_p_gt_0, rhat
+- **stratified_summary.json** (0 KB) - json. keys: model_reporter_by_phylop, model_reporter_by_activity, model_reporter_by_motif, model_eqtl_partial, model_reporter_by_ascertainment, n_eqtl, n_total
+- **supp_pervariant_concordance_map.csv** (717 KB) - csv, 3976x17. cols: variant_id, rsid, is_dav, mpra_logFC, mpra_fdr, model_effect_canonical, borzoi_abs, pip, eqtl_z, in_eqtl ...
+- **table1_model_stats.csv** (0 KB) - csv, 4x8. cols: model, n, mean_abs, median_abs, rho_reporter, rho_eQTL, DAV_AUROC, rho_phyloP
+- **variant_table_biallelic.parquet** (324 KB) - parquet, 3976x14. cols: rsid, chrom, pos, ref, alt, MAF, variant_pos, logFC, adj.P.Val, alt_ratio ...
+
+## data/eqtl/
+
+- **benchmark2_results.parquet** (60 KB) - parquet, 370x20. cols: rsid, chrom, pos, ref, alt, key, is_dav, key4_38, key4_flip, pip ...
+- **deng_gandal_eqtl_overlap.parquet** (46 KB) - parquet, 370x16. cols: rsid, chrom, pos, ref, alt, key, is_dav, key4_38, key4_flip, pip ...
+- **eqtl_referee_rho.json** (0 KB) - json. keys: AlphaGenome, Borzoi, Enformer, Evo 2, lentiMPRA
+- **walker_eqtl_summary.json** (1 KB) - json. keys: atlas, source, n_queried, n_with_association, n_with_beta, n_significant_p05, magnitude_spearman, direction_concordance, interpretation, contribution

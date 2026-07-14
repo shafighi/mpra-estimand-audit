@@ -1,0 +1,147 @@
+{
+  "benchmark1_lentiMPRA": {
+    "n_variants": 3976,
+    "n_dav": 76,
+    "signed_spearman_full": -0.02,
+    "signed_pearson_full": -0.013,
+    "sign_concordance": 0.498,
+    "magnitude_spearman_full": -0.013,
+    "magnitude_p": 0.43,
+    "spearman_dav": -0.13,
+    "dav_auroc": 0.542
+  },
+  "bayesian_denoising": {
+    "max_rhat": 1.007,
+    "dav_recovered": "73/76",
+    "weighted_rho": 0.006,
+    "reliable_half_rho": 0.024
+  },
+  "model_model_cluster": {
+    "borzoi_alphagenome_rho": 0.547,
+    "ag_motifbreakr_rho": 0.104,
+    "phylop_matrix": "0.01-0.04"
+  },
+  "latent_arbiter": {
+    "rho_mean": -0.018,
+    "hdi95": [
+      -0.064,
+      0.027
+    ],
+    "p_gt_0": 0.22,
+    "max_rhat": 1.01,
+    "n_div": 0,
+    "lam_ag": 0.87,
+    "lam_bz": 0.71,
+    "lam_mb": 0.19,
+    "lam_mp": 0.68
+  },
+  "concordance_map_all": {
+    "reporter_only": 2003,
+    "both_quiet": 977,
+    "concordant": 626,
+    "endogenous_only": 370
+  },
+  "concordance_map_dav": {
+    "concordant_calibrated": 25,
+    "concordant_rule": 23,
+    "reporter_only_calibrated": 51,
+    "reporter_only_rule": 53
+  },
+  "endogenous_in_domain": {
+    "caqtl_auroc": 0.76,
+    "caqtl_n": 36,
+    "loop_auroc": 0.64,
+    "loop_n": 2502,
+    "phylop_mannwhitney_p": 0.002
+  },
+  "benchmark2_eqtl": {
+    "source": "developing-brain xQTL atlas (Science 2024, adh0829), SuSiE fine-mapped",
+    "n_overlap": 370,
+    "all_in_credible_set": true,
+    "n_pip_gt_0.1": 73,
+    "n_pip_gt_0.5": 25,
+    "n_pip_gt_0.9": 16,
+    "n_dav_in_overlap": 11,
+    "ag_eqtl_rho": 0.238,
+    "ag_eqtl_ci": [
+      0.141,
+      0.328
+    ],
+    "ag_eqtl_p": 3.8e-06,
+    "bz_eqtl_rho": 0.276,
+    "bz_eqtl_p": 7.1e-08,
+    "mpra_eqtl_rho": -0.026,
+    "mpra_eqtl_ci": [
+      -0.13,
+      0.078
+    ],
+    "mpra_eqtl_p": 0.62,
+    "dir_concord_all": 0.505,
+    "dir_concord_pip01": 0.603,
+    "dir_concord_pip05": 0.8,
+    "dir_concord_pip05_frac": "20/25",
+    "dir_concord_pip05_binom_p": 0.002,
+    "dir_concord_pip01_p": 0.05
+  },
+  "stratified": {
+    "model_reporter_by_phylop": {
+      "low": 0.026,
+      "mid": -0.011,
+      "high": -0.058
+    },
+    "model_reporter_by_activity": {
+      "low": 0.039,
+      "mid": -0.007,
+      "high": -0.068
+    },
+    "model_reporter_by_motif": {
+      "low": 0.055,
+      "mid": -0.069,
+      "high": -0.055
+    },
+    "ag_eqtl_partial_ctrl_all": 0.232,
+    "bz_eqtl_partial_ctrl": 0.269
+  },
+  "sbc": {
+    "grid": [
+      -0.3,
+      0.0,
+      0.3
+    ],
+    "n_fits": 32,
+    "reps_per_rho": {
+      "-0.3": 6,
+      "0.0": 20,
+      "0.3": 6
+    },
+    "overall_coverage": 0.906,
+    "coverage_by_rho": {
+      "-0.3": 1.0,
+      "0.0": 0.85,
+      "0.3": 1.0
+    },
+    "bias_by_rho": {
+      "-0.3": -0.0107,
+      "0.0": 0.0067,
+      "0.3": -0.0033
+    },
+    "total_div": 0,
+    "note": "rho=0 (paper operating point) replicated 20x -> 17/20=0.85, within binomial CI of nominal 0.95; per-rho coverage reported in-text, not just aggregate"
+  },
+  "enformer": {
+    "status": "REPORTED_THIRD_MODEL",
+    "job_id": "2f35c4da-93b3-424d-abbd-82ba1f03c00e",
+    "n_scored": 3976,
+    "n_nonnull": 3976,
+    "runtime_min": 18,
+    "device": "NVIDIA L40S",
+    "enf_vs_ag_rho": 0.578,
+    "enf_vs_bz_rho": 0.813,
+    "enf_vs_reporter_rho": -0.012,
+    "enf_vs_reporter_p": 0.47,
+    "enf_vs_eqtl_rho": 0.235,
+    "enf_vs_eqtl_p": 4.98e-06,
+    "eqtl_n": 370,
+    "note": "Third independently-trained sequence model. Agrees with AG/Borzoi (rho 0.58/0.81), null vs reporter (rho=-0.01 n.s.), tracks eQTL (rho=0.235 p=5e-6) \u2014 same magnitude as AG (0.238) and Borzoi (0.276). Corroborates estimand-mismatch thesis; converts two-model panel to three-model consensus."
+  }
+}

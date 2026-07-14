@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+*.nc
+*.npz
+# large raw third-party inputs (see README External data)
+data/raw/
+*.bam
+*.fa
+*.fa.gz
